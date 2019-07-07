@@ -9,11 +9,8 @@
 <h3>Post Songs</h3>
 
 <%= form_for(@song) do |f| %>
-  <label>Song title:</label><br>
   <%= f.text_field :title %><br>
-
-  <label>Post description</label><br>
-  <%= f.text_area :description %><br>
+  <%= f.text_field :description %><br>
 
   <%= f.submit %>
 <% end %>
