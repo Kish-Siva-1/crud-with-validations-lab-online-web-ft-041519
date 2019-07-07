@@ -32,4 +32,8 @@ class SongsController < ApplicationController
     end
   end
 
+  private
+
+  
+
 end
