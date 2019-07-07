@@ -22,7 +22,7 @@ class SongsController < ApplicationController
 
   def create
     binding.pry
-    @song = Song.new(params.require(:artist_name, :genre, :release_year, :released))
+    @song = Song.new(params.required().(:artist_name, :genre, :release_year, :released))
     if @song.valid?
       @song.save
       redirect_to song_path(@song)
