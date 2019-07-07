@@ -21,6 +21,7 @@ class SongsController < ApplicationController
   end
 
   def create
+    binding.pry
     @song = Song.new(params[:songs])
     if @song.valid?
       @song.save
