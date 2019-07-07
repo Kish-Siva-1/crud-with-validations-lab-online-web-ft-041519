@@ -22,7 +22,7 @@ class SongsController < ApplicationController
 
   def create
     binding.pry
-    @song = Song.new(params[:songs])
+    @song = Song.new(params[:song])
     if @song.valid?
       @song.save
       redirect_to song_path(@song)
