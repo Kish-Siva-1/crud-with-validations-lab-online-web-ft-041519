@@ -10,8 +10,7 @@ class Song < ApplicationRecord
   def date_limit
 
     if !release_year
-      release_year = 0
-      red = release_year
+      red = 0
     else
       red = release_year
     end
