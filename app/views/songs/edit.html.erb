@@ -8,8 +8,3 @@
   <%= f.text_field :artist_name %><br>
   <%= f.submit %>
 <% end %>
-
-<h2><%= @song.title %></h2>
-<%= form_tag song_path(@song.id), method: "delete" do %>
-  <%= submit_tag "Delete #{@song.title}" %>
-<% end %>
