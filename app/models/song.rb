@@ -8,7 +8,7 @@ class Song < ApplicationRecord
   private
 
   def date_limit
-    if release_year > Time.new.year || release_year == nil
+    if release_year > Time.new.year || !release_year 
       errors.add(:date_limit, "can't be released in the future")
     end
   end
