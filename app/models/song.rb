@@ -1,4 +1,4 @@
-class Song < ActiveRecord::Base
+class Song <ApplicationRecord
   validates :title, presence: true
   validates_uniqueness_of :artist_name, scope: :release_year
   validates :release_year, presence: true, if: :released
