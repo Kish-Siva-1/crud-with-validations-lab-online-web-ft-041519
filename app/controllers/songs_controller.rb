@@ -12,7 +12,6 @@ class SongsController < ApplicationController
   end
 
   def update
-    binding.pry
     if @song.update(params[:song])
       redirect_to song_path(@song)
     else
