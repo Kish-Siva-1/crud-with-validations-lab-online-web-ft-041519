@@ -5,3 +5,9 @@
 <%= x.artist_name %>
 <%= x.genre %>
 <% end %>
+
+<h2><%= @song.name %></h2>
+<%= @song.email %>
+<%= form_tag person_path(@person.id), method: "delete" do %>
+  <%= submit_tag "Delete #{@person.name}" %>
+<% end %>
