@@ -6,6 +6,10 @@
 <%= x.genre %>
 <% end %>
 
+<%= form_tag song_path(@song.id) do %>
+  <%= submit_tag "Submit" %>
+<% end %>
+
 <h2><%= @song.name %></h2>
 <%= @song.email %>
 <%= form_tag song_path(@song.id), method: "delete" do %>
