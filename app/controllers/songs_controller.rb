@@ -12,7 +12,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    @song = Song.find(params[:id])
+    @song = Song.create(params[:songs])
   end
 
 end
