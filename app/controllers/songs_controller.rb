@@ -13,7 +13,7 @@ class SongsController < ApplicationController
 
   def update
     binding.pry
-    if @song.update(params[:songs])
+    if @song.update(params[:song])
       redirect_to song_path(@song)
     else
       render :edit
